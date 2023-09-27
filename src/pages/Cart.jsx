@@ -5,24 +5,26 @@ const Cart = () => {
   return (
     <div className=" bg-[#F2F2F2]/50 min-h-[80vh] py-12 pt-5">
       <div className="w-[90%]  flex mx-auto">
-        <div className="w-[100%] flex justify-start gap-12 items-start">
+        <div className="w-[100%] flex justify-between items-start">
           <div className="w-[40%] pb-6  bg-white rounded-[8px] flex flex-col gap-6 p-4 border-[1px] border-[#E6E6E6] ">
-            <p>Event Information</p>
+            <p className="text-[20px] leading-[36px] poppins-bold">
+              Ticket Cart
+            </p>
 
             <div className="py-6 w-[100%] border-b-[1px] border-[#E6E6E6] flex gap-3 flex-col">
-              <p className=" font-semibold text-xl text-[#AD3989]">
+              <p className=" poppins-regular text-xl text-[#AD3989]">
                 Early Bird Ticket
               </p>
               <div className="flex justify-between w-[100%]">
                 <div className="w-[70%]">
-                  <p>
+                  <p className="poppins-light text-[#4D4D4D]">
                     This ticket gives you access to the 3-day in-person event at
                     the Jua Kali Avenue, Nairobi
                   </p>
-                  <p>Ksh 5,000</p>
+                  <p className="my-2 poppins-bold text-xl">Ksh 5,000</p>
                 </div>
                 <div className="w-[20%] flex flex-col gap-1 items-end">
-                  <div className="w-[100%] p-2 border-[#CCCCCC]  border-[1px] rounded-[2px] h-[40px] flex justify-between items-center">
+                  <div className="w-[100%] p-2 text-[#808080] poppins-light border-[#CCCCCC]  border-[1px] rounded-[2px] h-[40px] flex justify-between items-center">
                     <p>-</p>
                     <p>01</p>
                     <p>+</p>
@@ -30,8 +32,11 @@ const Cart = () => {
                   <p>Ksh 5,000</p>
                 </div>
               </div>
-              <p>Who is this ticket for</p>
-              <input className="w-[60%] border-[1px] focus:border-gray-300 focus:ring-gray-300  p-2 rounded-[6px] h-[48px] border-[#545F71]" />
+              <p className="text-[#545F71]">Who is this ticket for ?</p>
+              <input
+                className="w-[60%] border-[1px] focus:border-gray-300 focus:ring-gray-300  p-2 rounded-[6px] h-[48px] border-[#545F71]"
+                placeholder="James Macharia"
+              />
             </div>
             <div className="py-6 w-[100%] border-b-[1px] border-[#E6E6E6] flex gap-3 flex-col">
               <p className=" font-semibold text-xl text-[#AD3989]">
@@ -70,7 +75,7 @@ const Cart = () => {
               </Link>
             </div>
           </div>
-          <div className="w-[65%] pb-12  bg-white rounded-[8px] flex flex-col gap-6 p-4 border-[1px] border-[#E6E6E6] ">
+          <div className="w-[58%] pb-12  bg-white rounded-[8px] flex flex-col gap-6 p-4 border-[1px] border-[#E6E6E6] ">
             <p>Event Information</p>
 
             <p>Regular Tickets</p>
