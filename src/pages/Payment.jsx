@@ -5,15 +5,20 @@ const Payment = () => {
   return (
     <div className=" bg-[#F2F2F2]/50 py-12 pt-5">
       <div className="flex w-[90%] mx-auto  gap-2 items-center">
-        <Link to="/cart">Ticket Cart</Link> <p>{"<"}</p>
-        <p className="font-semibold">Payment</p> <p>{"<"}</p>
-        <Link to="/payment-details">Payment Details</Link>
+        <Link to="/cart" className="text-[#4D4D4D] poppins-light">
+          Ticket Cart
+        </Link>{" "}
+        <p>{"<"}</p>
+        <p className="text-[#202020] poppins-regular">Payment</p> <p>{"<"}</p>
+        <Link className="text-[#202020] poppins-regular" to="/payment-details">
+          Payment Details
+        </Link>
       </div>
 
       <div className="w-[90%]   flex justify-center items-center mx-auto">
-        <div className="w-[500px] bg-white rounded-[8px] border-[1px] border-[#E6E6E6] justify-center items-center px-6 py-8 flex flex-col gap-2">
+        <div className="w-[500px] poppins-light bg-white rounded-[8px] border-[1px] border-[#E6E6E6] justify-center items-center px-6 py-8 flex flex-col gap-2">
           <div className="w-[100%] flex justify-start">
-            <p className="text-xl font-bold">Payment</p>
+            <p className="text-xl poppins-bold">Payment</p>
           </div>
 
           <div className="w-[100%] flex justify-between  items-center">
@@ -94,7 +99,7 @@ const Payment = () => {
             </div>
           </div>
 
-          <button className="w-[100%] bg-[#AD3989] font-semibold p-4 flex justify-center items-center rounded-[8px] text-white text-sm">
+          <button className="w-[100%] bg-[#AD3989] poppins-regular p-4 flex justify-center items-center rounded-[8px] text-white text-sm">
             Pay Ksh 1000
           </button>
         </div>
