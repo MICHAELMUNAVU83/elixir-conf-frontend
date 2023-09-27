@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   return (
@@ -61,9 +62,12 @@ const Cart = () => {
               <p>Ksh 19,000</p>
             </div>
             <div className="w-[100%] mt-4 ">
-              <button className="bg-[#AD3989] p-2 flex justify-center items-center w-[100%] rounded-[6px] text-white text-lg">
+              <Link
+                to="/payment"
+                className="bg-[#AD3989] p-2 flex justify-center items-center w-[100%] rounded-[6px] text-white text-lg"
+              >
                 Checkout
-              </button>
+              </Link>
             </div>
           </div>
           <div className="w-[65%] pb-12  bg-white rounded-[8px] flex flex-col gap-6 p-4 border-[1px] border-[#E6E6E6] ">
@@ -218,7 +222,7 @@ const Cart = () => {
                       Ticket Value
                     </p>
                     <p className="uppercase text-sm  p-2 bg-[#C89301] text-white font-semibold  ">
-                     Vip/All Access Ticket
+                      Vip/All Access Ticket
                     </p>
                   </div>
                 </div>
