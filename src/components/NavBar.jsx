@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <div className="flex flex-col w-[100%]">
       <div className="w-[90%] mx-auto h-[60px] flex justify-between items-center ">
-        <img src="/elixirconflogo.png" className="w-[160px] h-[29px] " alt="" />
+        <img src="/elixirconflogo.svg" className="w-[160px] h-[29px] " alt="" />
         <div className="flex gap-4 items-center">
           <button className="text-white bg-[#AD3989] border-[1px] w-[130px] text-sm h-[34px] flex gap-2 items-center justify-center rounded-[4px]">
             <p>Become speaker</p>
@@ -23,7 +23,7 @@ const NavBar = () => {
       <div
         className="w-[100%] -mb-16  flex justify-center items-center text-white text-6xl font-bold   h-[164px]"
         style={{
-          backgroundImage: `url("/elixirconfbg.svg")`,
+          backgroundImage: `url("/elixirconfbg.png")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
