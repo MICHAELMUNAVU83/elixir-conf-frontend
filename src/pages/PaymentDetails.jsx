@@ -8,15 +8,15 @@ const PaymentDetails = () => {
         <Link to="/cart" className="text-[#4D4D4D] poppins-light">
           Ticket Cart
         </Link>{" "}
-        <p>{">"}</p>
+        <img src="arrow-left.svg" className="w-[14px] h-[14px] " />
         <Link className="text-[#202020] poppins-regular" to="/payment">
           Payment
         </Link>
       </div>
 
       <div className="w-[90%]  mt-4 flex justify-center items-center mx-auto">
-        <div className="w-[100%] flex  justify-between ">
-          <div className="w-[40%] flex flex-col gap-4">
+        <div className="w-[100%] flex md:flex-row flex-col  justify-between ">
+          <div className="md:w-[40%] flex flex-col gap-4">
             <div className="  bg-white  px-4 py-8 flex flex-col gap-4 rounded-[8px] border-[1px] border-[#E6E6E6] ">
               <p className="text-[#2F974C] text-2xl font-bold">
                 Payment Details
@@ -49,7 +49,7 @@ const PaymentDetails = () => {
               </p>
             </div>
           </div>
-          <div className="w-[30%] flex flex-col justify-center items-center gap-2 py-8">
+          <div className="md:w-[30%] flex flex-col justify-center items-center gap-2 py-8">
             <img
               src="/sucessticket.svg"
               className="w-[373px] h-[243px] object-cover"

@@ -4,8 +4,8 @@ const Details = () => {
   return (
     <div className=" bg-[#F2F2F2]/50 py-12 pt-5">
       <div className="w-[90%]  flex mx-auto">
-        <div className="w-[100%] flex justify-between items-start">
-          <div className="w-[30%] h-[377px] bg-white rounded-[8px] flex flex-col gap-4 p-4 border-[1px] border-[#E6E6E6] ">
+        <div className="w-[100%]  flex md:flex-row gap-8 flex-col justify-between items-start">
+          <div className="md:w-[30%] h-[377px] w-[100%] bg-white rounded-[8px] flex flex-col gap-4 p-4 border-[1px] border-[#E6E6E6] ">
             <p className="text-[20px]  poppins-bold leading-[36px]">
               Event Information
             </p>
@@ -36,9 +36,9 @@ const Details = () => {
               <p className="poppins-regular ">Elixir Conf Africa</p>
             </div>
           </div>
-          <div className="w-[65%] h-[505px] bg-white rounded-[8px] border-[1px] border-[#E6E6E6]  flex flex-col gap-4 p-4 ">
+          <div className="md:w-[65%]  w-[100%] md:h-[505px] bg-white rounded-[8px] border-[1px] border-[#E6E6E6]  flex flex-col gap-4 p-4 ">
             <p className="poppins-bold text-xl">Available Tickets</p>
-            <div className="grid grid-cols-2 gap-8 w-[100%]">
+            <div className="grid md:grid-cols-2 gap-8 w-[100%]">
               <div className="w-[100%] border-[#E6E6E6] border-[1px] rounded-[8px]  h-[170px] flex flex-col justify-between p-3">
                 <div className="flex  poppins-regular justify-between w-[100%]">
                   <p className="text-[#AD3989]">Early Bird Ticket</p>

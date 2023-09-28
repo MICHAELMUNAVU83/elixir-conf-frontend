@@ -14,3 +14,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
+
+.active {
+  border-bottom: 2px solid #ad3989; /* You can adjust the color as needed */
+}

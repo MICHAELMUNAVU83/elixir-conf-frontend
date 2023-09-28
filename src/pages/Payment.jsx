@@ -4,12 +4,19 @@ import { Link } from "react-router-dom";
 const Payment = () => {
   return (
     <div className=" bg-[#F2F2F2]/50 py-12 pt-5">
-      <div className="flex w-[90%] mx-auto  gap-2 items-center">
+      <div className="flex md:text-base text-sm w-[90%] mx-auto md:my-0 my-4  gap-2 items-center">
         <Link to="/cart" className="text-[#4D4D4D] poppins-light">
           Ticket Cart
         </Link>{" "}
-        <p>{"<"}</p>
-        <p className="text-[#202020] poppins-regular">Payment</p> <p>{"<"}</p>
+        <img
+          src="arrow-left.svg"
+          className="w-[14px] object-contain h-[14px] "
+        />
+        <p className="text-[#202020] poppins-regular">Payment</p>{" "}
+        <img
+          src="arrow-left.svg"
+          className="w-[14px] object-contain h-[14px] "
+        />
         <Link className="text-[#202020] poppins-regular" to="/payment-details">
           Payment Details
         </Link>
@@ -54,8 +61,8 @@ const Payment = () => {
               />
             </div>
           </div>
-          <div className="w-[100%] flex justify-between items-start">
-            <div className="flex w-[48%] flex-col gap-2">
+          <div className="w-[100%] flex md:flex-row flex-col justify-between items-start">
+            <div className="flex md:w-[48%] w-[100%] flex-col gap-2">
               <div className="flex justify-between  text-[#999999] items-center">
                 <p>Expiry Date</p>
                 <p className="text-[#CCCCCC]">MM/YY</p>
@@ -68,7 +75,7 @@ const Payment = () => {
               />
             </div>
 
-            <div className="flex w-[48%] flex-col gap-2">
+            <div className="flex md:w-[48%] w-[100%]  flex-col gap-2">
               <div className="flex justify-between  text-[#999999] items-center">
                 <p>Security Code</p>
                 <p className="text-[#CCCCCC]">CCV</p>
